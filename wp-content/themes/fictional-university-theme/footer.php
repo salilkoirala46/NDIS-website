@@ -1,0 +1,1 @@
+<h1>This is bye bye from footer</h1>
