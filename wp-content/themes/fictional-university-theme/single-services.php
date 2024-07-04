@@ -23,6 +23,18 @@ while (have_posts()){
         <div class="generic-content">
             <?php the_content();?>
         </div>
+        <?php
+          $relatedCommunity = get_field('related_community');
+          if($relatedCommunity) {
+          echo '<hr class="section-break">';
+          echo '<h2 class="headline headline--small">Related Community</h2>';
+          echo '<ul class="link-list min-list">';
+          foreach($relatedCommunity as $community) { ?>
+            <li><a href="<?php echo get_the_permalink($community); ?>"> <?php echo get_the_title($community); ?></a></li>
+         <?php }
+          echo '</ul>';
+          }
+        ?>
     </div>  
 <?php }
 

@@ -17,13 +17,17 @@
 <div class="container container--narrow page-section">
     <?php 
         while(have_posts()){
-            the_post(); ?>
+            the_post();
+             ?>
             <div class="event-summary">
                     <a class="event-summary__date t-center" href="<?php the_permalink(); ?>">
-                    <span class="event-summary__month"><?php the_time('M') ?></span>
-                    <span class="event-summary__day"><?php the_time('d') ?></span>
+                    <span class="event-summary__month"><?php 
+                            $serviceDate = new DateTime(get_field('service_date'));
+                            echo $serviceDate->format('M');
+                        ?></span>
+                    <span class="event-summary__day"><?php echo $serviceDate->format('d');?></span>
                     </a>
-                    <div class="event-summary__content">
+                    <div clashows="event-summary__content">
                         <h5 class="event-summary__title headline headline--tiny"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
                         <p><?php echo wp_trim_words(get_the_content(), 18); ?><a href="<?php the_permalink(); ?>" class="nu gray">Read more</a></p>
                     </div>
@@ -32,6 +36,8 @@
 
          echo paginate_links();
     ?>
+    <hr class="section-break">
+    <p> Looking for a recap of past events? </p> <a href="<?php echo site_url('/past-services')?>">Check out our past services</a>
 </div>
 <?php 
     get_footer();
