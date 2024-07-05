@@ -17,6 +17,8 @@ function ndis_features(){
     register_nav_menu('footerMenuLocation2', 'Footer Menu Location 2'); //for footer menu 1
     add_theme_support('title-tag'); //for title tag in the browser
     add_theme_support('post-thumbnails'); //for featured image
+    add_theme_support('resourcesLandscape', 400, 260, true); //for custom image size
+    add_theme_support('resourcesLandscape', 480, 650, true);
 }
 
 add_action('after_setup_theme', 'ndis_features');
