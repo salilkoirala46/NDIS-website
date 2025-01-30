@@ -25,7 +25,7 @@
                 <nav class="navbar navbar-expand-lg navbar-light"> 
                     <a href="#" class="navbar-brand p-0 d-flex flex-column align-items-center">
                         <img class="img-logo" src="<?php echo get_theme_file_uri('img/logo.jpg') ?>" alt="Logo"> 
-                        <!-- <h1 class="text-primary mb-0">All Aspects Care</h1> -->
+                        <h1 class="text-primary mb-0">All Aspects Care</h1>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars"></span>
