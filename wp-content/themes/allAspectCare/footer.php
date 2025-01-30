@@ -33,7 +33,7 @@
                     
                     <div class="col-xl-4">
                         <div class="footer-item">
-                            <h4 class="text-white mb-4">Contact Uss</h4>
+                            <h4 class="text-white mb-4">Contact Us</h4>
                             <p class="mb-3">We'd love to hear from you! Whether you have questions about our services or need assistance, our team is here to help. Reach out to us anytime.</p>
                             <p class="text-white">
                             <span class="bg-primary text-white rounded p-2"><i class="fa fa-phone-alt"></i></span> Phone: 61450934577 </br>
